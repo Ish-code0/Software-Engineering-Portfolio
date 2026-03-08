@@ -171,9 +171,9 @@ The program was developed using Python and the turtle graphics module.
   
 ## To run the game you have to
 
--Install Python 
--Download the relevant files
--Run the program using "python snake_game.py"
+- Install Python 
+- Download the relevant files
+- Run the program using "python snake_game.py"
 
 ### Technologies Used
 
@@ -184,7 +184,27 @@ The program was developed using Python and the turtle graphics module.
 
 ## Created a Basic Website using HTML, CSS and Javascript
 
-This project is a simple, responsive website developed using HTML, CSS, and JavaScript in Visual Studio Code. While the site is functional, I identified areas for improvement. Which includes simplifying the HTML/CSS structure, enhancing the design and UX and adding more secure JavaScript features. In addition, the accessibility could be improved too. Overall, this project was a very valuable learning experience that will help me build more polished and professional websites in the future.
+This project is a simple, responsive website developed using HTML, CSS, and JavaScript in Visual Studio Code. While the site is functional, I identified areas for improvement. Which includes simplifying the HTML/CSS structure, enhancing the design and UX and adding more secure JavaScript features. In addition, the accessibility could be improved too. Overall, this project was a very valuable learning experience that will help me build more polished and professional websites in the future. 
 
+- Please refer to the Basic Web Development folder to see all code for this project.
 
+## Advanced Programming Hackathon (Transport Web Service)
+
+This project is a web service I developed in Java as part of my Advanced Programming hackathon. It allowed me to practice Java, database handling, and creating web endpoints.
+
+I built four main endpoints using Javalin:
+
+- /test – checks if the database is connected properly
+
+- /stops – shows the number of stops in a locality
+
+- /stopinfo – gives details about stops in JSON
+
+- /stopsnear – finds the 5 nearest stops in XML
+
+I used SQLite for the database, handled queries safely with prepared statements, and formatted the results into JSON or XML depending on the endpoint. This project helped me get alot better at working with backend logic, validating user input, and handling errors.
+
+For further development, I’d like to connect it to a frontend interface and add security features. Overall, it was a great challenge and really improved my coding and problem-solving skills. 
+
+- Please refer to the Advanced Programming Hackathon to see what I have done. 
 
