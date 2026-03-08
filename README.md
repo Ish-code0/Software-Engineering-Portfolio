@@ -181,3 +181,10 @@ The program was developed using Python and the turtle graphics module.
 - Turtle graphics
 - Loops and conditional logic
 - Functions
+
+## Created a Basic Website using HTML, CSS and Javascript
+
+This project is a simple, responsive website developed using HTML, CSS, and JavaScript in Visual Studio Code. While the site is functional, I identified areas for improvement. Which includes simplifying the HTML/CSS structure, enhancing the design and UX and adding more secure JavaScript features. In addition, the accessibility could be improved too. Overall, this project was a very valuable learning experience that will help me build more polished and professional websites in the future.
+
+
+
