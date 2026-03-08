@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ish's Website</title>
+<link rel=" stylesheet" href= "mystyle.css" />
+</head>
+
+<body>
+
+<h1> My Bookshop </h1>  <!--This is a comment for the h1 tag, largest font heading -->
+
+<nav class="topnav" id="topnavbar"> 
+  <a href="index.html" class="topnav-logo">Ish's Website</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a> <!-- This is for the responsive web design menu across all devices -->
+  <div class="topnav-links" id="navLinks"> 
+    <a href="index.html">Home</a></li>
+    <a href="about.html">About</a></li><!-- Part of the menu About page-->
+    <a href="contactus.html">Contact Us</a></li> <!-- Part of the menu Contact Us page-->
+  </nav>
+</div>
+
+<div class="success-container">
+    <h2>Payment Successful!</h2>
+    <p class="card-last">Card ending in **** <span id="last4">xxxx</span></p>
+    <p>Thank you, your purchase has been completed!</p>
+   </div>
+
+   <script>
+    const params = new URLSearchParams(window.location.search); // Extracts the query from the current webpage
+    const last4 = params.get("last4"); // gets the value of the parameter known as last 4
+    if (last4) { //if statement to make sure the last 4 digits are presented on success.html and if null nothing will show
+      document.getElementById("last4").textContent = last4; //ensures last 4 digits //
+    } //  I have used the method URL parameters due to it being simple and easy to use, however if i wanted to make my website more secure I would use Form POST to a back-end -->
+  </script> 
+   
