@@ -1,1 +1,70 @@
-rrfr
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ish's Website</title>
+<link rel=" stylesheet" href= "mystyle.css" />
+</head>
+
+
+<body>
+
+<h1> My Bookshop</h1>  <!--This is a comment for the h1 tag, largest font heading -->
+
+<nav class="topnav" id="topnavbar"> 
+  <a href="index.html" class="topnav-logo">Ish's Website</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a> <!-- This is for the responsive web design menu across all devices -->
+
+  <div class="topnav-links" id="navLinks"> 
+    <a href="index.html">Home</a></li>
+    <a href="about.html">About</a></li><!-- Part of the menu About page-->
+    <a href="contactus.html">Contact Us</a></li> <!-- Part of the menu Contact Us page-->
+
+  </nav>
+</div>
+
+    <div class="books-container">
+    <div class="books">
+      <img src= "images/Book one good vibes.jpeg" alt="book one" >
+      <div class="explanation">Book One</div>
+      <p class="books-description">
+      Good vibes Good Life is a book that encourages a positive mindset towards life. By having positive thinking paired with self love it attracts good things. This book is all about positivity and being optimistic.</p>
+      <a href="pay.html" class="pay-option">Pay</a>
+    </div>
+
+    <div class="books">
+      <img src= "images/Book 2 Art of War.jpg" alt="book one" >
+      <div class="explanation">Book Two</div>
+      <p class="books-description">
+        The Art Of War is a book about warfare and strategy within the military. However, the lessons taught in this book can be applied to your daily living. This book is all about using your mind. </p>
+      <a href="pay.html" class="pay-option">Pay</a>
+    </div>
+
+    <div class="books">
+      <img src= "images/Book 3 Socrates.jpg" alt="book one" >
+      <div class="explanation">Book Three</div>
+      <p class="books-description">
+        How to Think Like Socrates is a book that encouraeges the mindset of Socrates and it teaches you his philosophy. In everyday life it can be used to think more critically. This book is also about using your mind.</p>
+      <a href="pay.html" class="pay-option">Pay</a>
+    </div>
+
+    <div class="books">
+      <img src= "images/Book 4 Atomic Habits.jpg" alt="book one" >
+      <div class="explanation">Book Four</div>
+      <p class="books-description">
+      Atomic Habits is a book about instilling good habits in your day to day life and removing the bad ones. It promotes making it easy and satisfying to do. There are principles to follow in this book and to learn from.</p>
+      <a href="pay.html" class="pay-option">Pay</a>
+    </div>
+  </div>
+    
+  <script>
+    function toggleNav() { //this is for the visibility of the navigation menu and the function is 'toggle nav'
+      const navLinks = document.getElementById("navLinks"); //Collects the data from the ID 'navlinks', which allows the navigation to be linked
+      navLinks.classList.toggle("show"); //This is for making the nav menu appear on smaller screen sizes by adding the 'show' class
+    }
+
+  </script>
+  </body>
+
+
+
+
