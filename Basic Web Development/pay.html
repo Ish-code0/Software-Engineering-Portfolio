@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ish's Website</title>
+<link rel=" stylesheet" href= "mystyle.css" />
+</head>
+
+<body>
+
+<h1> My Bookshop </h1>  <!--This is a comment for the h1 tag, largest font heading -->
+
+<nav class="topnav" id="topnavbar"> 
+  <a href="index.html" class="topnav-logo">Ish's Website</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a> <!-- This is for the responsive web design menu across all devices -->
+  <div class="topnav-links" id="navLinks"> 
+    <a href="index.html">Home</a></li>
+    <a href="about.html">About</a></li><!-- Part of the menu About page-->
+    <a href="contactus.html">Contact Us</a></li> <!-- Part of the menu Contact Us page-->
+  </nav>
+</div>
+
+<div class="payment-container">
+<h2>Enter Payment Details</h2>
+<form action="success.html" method="get">
+
+<label for="cardName">Name on Card</label>
+<input type="text" id="cardName" name="cardName" required>
+    
+<label for="cardNumber">Card Number</label>
+<input type="text" id="cardNumber" name="cardNumber" minlength="16" required>
+    
+<label for="expiry">Expiry Date</label>
+<input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+    
+ <label for="cvv">CVV</label>
+<input type="password" id="cvv" name="cvv" minlength="4" required>
+    
+ <button type="submit" class="submit-button">Submit Payment</button>
+ </form>
+ </div>
+
+<script>
+ document.querySelector("form").addEventListener("submit", function(event) { //// Selects the 1st form element, adds a 'submit' event listener to it
+ event.preventDefault(); // Changes regular form submission by adding a stop to it //
+      
+ const cardNumber = document.getElementById("cardNumber").value; //gets the long card number
+ const last4 = cardNumber.slice(-4); //leaves the last 4 digits showing
+      
+ // The pay.html then goes to success.html with last 4 digits in URL //
+ window.location.href = `success.html?last4=${last4}`;
+ });
+
+</script>
+ </body>
