@@ -2,7 +2,7 @@
 
 Second-year Software Engineering student at Manchester Metropolitan University.
 
-I am currently developing mu skills in:
+I am currently developing my skills in:
 
 - Advanced programming (java)
 - Full Stack Web Development 
